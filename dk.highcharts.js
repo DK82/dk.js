@@ -1,7 +1,7 @@
-﻿dk = {}
-dk.charts = {}
+﻿var dk = {}
+var dk.charts = {}
 
-dk.charts.setLegend = function (mobile, chartId) {
+var dk.charts.setLegend = function (mobile, chartId) {
 
     var count = d3.selectAll('#' + chartId + ' .highcharts-legend-item')[0].length
 
