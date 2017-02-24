@@ -1,4 +1,6 @@
-﻿var dk = {}
+﻿var dk = {
+charts: {}
+}
 var dk.charts = {}
 
 var dk.charts.setLegend = function (mobile, chartId) {
