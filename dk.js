@@ -40,7 +40,7 @@ var dk =
 
 
     },
-    doGetS = function(route, params, callback, callbackParams, async)
+    doGetS: function(route, params, callback, callbackParams, async)
     {
         async = (typeof async === 'undefined') ? true : async;
         $.ajax({
