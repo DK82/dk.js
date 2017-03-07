@@ -1,6 +1,7 @@
+var dk2 = { test:'dk2'}
 (function () {
 	'use strict';
-
+	var dk3 = {test:'dk3'};
     var dk = {
      
         charts: {
