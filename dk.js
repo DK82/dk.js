@@ -1,13 +1,10 @@
-
-
-
-var dk = 
-{ 
-    version: 'v1.0',      
+var dk =
+{
+    version: 'v1.0',
     outputContent: false,
-    
-    
-    getUrl: function(controller, action) {
+
+
+    getUrl: function (controller, action) {
         try {
             return pageUrl.replace('A', action).replace('C', controller);
         } catch (e) {
@@ -15,8 +12,7 @@ var dk =
             return null;
         }
     },
-    doGet: function (route, params, callback, callbackParams, async)
-    {
+    doGet: function (route, params, callback, callbackParams, async) {
         async = (typeof async === 'undefined') ? true : async;
         $.ajax({
             type: 'GET',
@@ -31,19 +27,17 @@ var dk =
                     myCallback(response);
             },
             error: function (error) {
-                console.log(error.responseText);        
+                console.log(error.responseText);
             }
         });
 
-        function myCallback(response) 
-        {
-            callback(response,callbackParams);
+        function myCallback(response) {
+            callback(response, callbackParams);
         }
 
 
     },
-    doGetS: function(route, params, callback, callbackParams, async)
-    {
+    doGetS: function (route, params, callback, callbackParams, async) {
         async = (typeof async === 'undefined') ? true : async;
         $.ajax({
             type: 'GET',
@@ -58,25 +52,24 @@ var dk =
                 myCallback(response)
             },
             error: function (error) {
-                console.log(error.responseText);        
+                console.log(error.responseText);
             }
         });
 
-        function myCallback(response) 
-        {
-            callback(response,callbackParams);
+        function myCallback(response) {
+            callback(response, callbackParams);
         }
 
 
     },
     highcharts: {
-    
-    	setLegend: function (vertical, chartId) {
+        version: 'v1.1',
+        setLegend: function (vertical, chartId) {
 
-        var legendItems = d3.selectAll('#' + chartId + ' .highcharts-legend-item')._groups[0];
-        var count = legendItems.length;
+            var legendItems = d3.selectAll('#' + chartId + ' .highcharts-legend-item')._groups[0];
+            var count = legendItems.length;
 
-            var x,y,y1,y2;       
+            var x, y, y1, y2;
             var yDiff = 24;
 
             if (count > 1) {
@@ -142,14 +135,3 @@ var dk =
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
