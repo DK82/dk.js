@@ -3,7 +3,7 @@
 
 var dk = 
 { 
-    version: 'v1.0',
+    version: 'v1.1',
     outputContent: false,
     getUrl: function(controller, action) {
         try {
