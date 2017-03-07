@@ -2,9 +2,9 @@
 
 	
 
-var dk = {
+//var dk = {
 
-highcharts: {
+dk.highcharts: {
     
     	setLegend: function (vertical, chartId) {
 
@@ -76,7 +76,7 @@ highcharts: {
         }
     }
 }
-}
+//}
 
 
   
