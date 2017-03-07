@@ -1,9 +1,9 @@
 
-(function () {
+//(function () {
 	
-	var dk3 = {test:'dk3'};
+
     var dk = {
-     
+     	version: 'v1.0',
         charts: {
             setLegend: function (mobile, chartId) {
 
@@ -76,7 +76,7 @@
     }
         }
     }
-    })();
+   // })();
 
   
 
