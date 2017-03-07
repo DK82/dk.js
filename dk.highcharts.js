@@ -1,4 +1,4 @@
-var dk2 = { test:'dk2'}
+var dk2 = { test:'dk2'};
 (function () {
 	
 	var dk3 = {test:'dk3'};
