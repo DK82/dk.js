@@ -4,7 +4,7 @@
 
     var dk = {
      	version: 'v1.0',
-        charts: {
+        highcharts: {
             setLegend: function (mobile, chartId) {
 
         var legendItems = d3.selectAll('#' + chartId + ' .highcharts-legend-item')._groups[0];
