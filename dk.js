@@ -3,8 +3,11 @@
 
 var dk = 
 { 
-    version: 'v1.1',
+    version: 'v1.0',
+    highcharts: {version: 'v1.1'},    
     outputContent: false,
+    
+    
     getUrl: function(controller, action) {
         try {
             return pageUrl.replace('A', action).replace('C', controller);
