@@ -5,7 +5,7 @@
     var dk = {
      	version: 'v1.0',
         highcharts: {
-            setLegend: function (mobile, chartId) {
+            setLegend: function (vertical, chartId) {
 
         var legendItems = d3.selectAll('#' + chartId + ' .highcharts-legend-item')._groups[0];
         var count = legendItems.length;
@@ -14,7 +14,7 @@
         var yDiff = 24;
   
         if (count > 1) {
-            if (!mobile) {
+            if (vertical) {
                 x = parseFloat(d3.select(legendItems[count - 1]).attr('transform').split(',')[0].split('(')[1]);
                 yDiff = 24;
 
