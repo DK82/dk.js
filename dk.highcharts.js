@@ -1,4 +1,5 @@
-
+(function () {
+	'use strict';
 
     var dk = {
      
@@ -74,7 +75,7 @@
     }
         }
     }
- 
+    })();
 
   
 
