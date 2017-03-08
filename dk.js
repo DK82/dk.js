@@ -135,6 +135,14 @@ var dk =
             }
         }
     },
+    test:{
+            var weatherAPI = 'http://api.openweathermap.org/data/2.5/weather';
+            var data = { q : "Portland,OR", units : "metric"  };
+            function showWeather(response) { 
+                console.log(JSON.stringify(response)); 
+            }
+            $.getJSON(weatherAPI,data, showWeather);
+    },
     array: {
         version: 'v1.0',
         exist: function(array, item)
