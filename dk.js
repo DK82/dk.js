@@ -139,11 +139,12 @@ var dk =
         version: 'v1.0',
         exist: function(array, item)
         {
+            var result = false;
             $.grep( array, function( n, i ) {
                 if (n == item)
-                    return true;
+                    result = true;
             });
-            return false;
+            return result;
         },
         getItemIds: function (array) {
             var result = [];
