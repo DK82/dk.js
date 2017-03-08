@@ -162,46 +162,42 @@ var dk =
             return result;
         },
         startsWith: function (array, text, propertyName) {
-            var result = [];
+            
             $.grep(array, function (n, i) {
                 if (propertyName != undefined && propertyName != null)
                 {
                     if (n[propertyName].toUpperCase().startsWith(text.toUpperCase()))
-                        result.push(n);
+                        return n;
                 }
                 else
                 {
                     if (n.toUpperCase().startsWith(item.toUpperCase()))
-                        result.push(n);
+                        return n;
                 }
         
         
             });
-            return result;
+           
         },
         find: function (array, text, propertyName) {
-            var result = {};
+         
             $.grep(array, function (n, i) {
                 if (propertyName != undefined && propertyName != null)
                 {
                     if (n[propertyName].toUpperCase().startsWith(text.toUpperCase()))
-                    {
-                        result = n;
-                        return;
-                    }
+                        return n;                      
+                    
                 }
                 else
                 {
                     if (n.toUpperCase().startsWith(item.toUpperCase()))
-                    {
-                        result = n;
-                        return;
-                    }
+                        return n;                 
+                    
                 }
         
         
             });
-            return result;
+          
         }
     }
 
