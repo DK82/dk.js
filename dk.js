@@ -163,7 +163,7 @@ var dk =
         },
         startsWith: function (array, text, propertyName) {
             
-            $.grep(array, function (n, i) {
+            return $.grep(array, function (n, i) {
                 if (propertyName != undefined && propertyName != null)
                 {
                     if (n[propertyName].toUpperCase().startsWith(text.toUpperCase()))
@@ -181,7 +181,7 @@ var dk =
         },
         find: function (array, text, propertyName) {
          
-            $.grep(array, function (n, i) {
+            return $.grep(array, function (n, i) {
                 if (propertyName != undefined && propertyName != null)
                 {
                     if (n[propertyName].toUpperCase().startsWith(text.toUpperCase()))
