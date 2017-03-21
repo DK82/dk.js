@@ -13,6 +13,7 @@ var dk =
             return null;
         }
     },
+
     doGet: function (route, params, callback, callbackParams, async) {
         async = (typeof async === 'undefined') ? true : async;
         $.ajax({
@@ -63,6 +64,33 @@ var dk =
 
 
     },
+    doPost: function (route, params, callback, callbackParams, async) {
+        async = (typeof async === 'undefined') ? true : async;
+        $.ajax({
+            type: 'POST',
+            url: route,
+            data: JSON.stringify(params),
+            async: async,
+            contentType: 'application/json; charset=utf-8',
+            success: function (response) {
+                if (dk.outputContent) console.log(response);
+                if (callback != null)
+                    myCallback(response);
+            },
+            error: function (error) {
+                console.log(error.responseText);
+            }
+        });
+
+        function myCallback(response) {
+            callback(response, callbackParams);
+        }
+
+
+    },
+
+
+
     highcharts: {
         version: 'v1.1',
         setLegend: function (vertical, chartId) {
@@ -134,13 +162,12 @@ var dk =
                 });
             }
         }
-    },    
+    },
     array: {
         version: 'v1.0',
-        exist: function(array, item)
-        {
+        exists: function (array, item) {
             var result = false;
-            $.grep( array, function( n, i ) {
+            $.grep(array, function (n, i) {
                 if (n == item)
                     result = true;
             });
@@ -161,44 +188,60 @@ var dk =
             });
             return result;
         },
-        startsWith: function (array, text, propertyName) {
-            
-            return $.grep(array, function (n, i) {
-                if (propertyName != undefined && propertyName != null)
-                {
+        startsWith: function (array, text, propertyName, maxCount) {
+
+            var result = $.grep(array, function (n, i) {
+                if (propertyName != undefined && propertyName != null) {
                     if (n[propertyName].toUpperCase().startsWith(text.toUpperCase()))
                         return n;
                 }
-                else
-                {
+                else {
                     if (n.toUpperCase().startsWith(item.toUpperCase()))
                         return n;
                 }
-        
-        
+
+
             });
-           
+
+            if (maxCount != undefined && maxCount != null)
+            {
+                result = result.slice(0,maxCount);
+            }
+            return result;
+
         },
-        find: function (array, text, propertyName) {
-         
-            return $.grep(array, function (n, i) {
-                if (propertyName != undefined && propertyName != null)
-                {
-                    if (n[propertyName].toUpperCase().startsWith(text.toUpperCase()))
-                        return n;                      
-                    
+        find: function (array, text, propertyName, maxCount) {
+
+            var result = $.grep(array, function (n, i) {
+                if (propertyName != undefined && propertyName != null) {
+                    if (n[propertyName].toUpperCase().indexOf(text.toUpperCase()) >= 0)
+                        return n;
+
                 }
-                else
-                {
-                    if (n.toUpperCase().startsWith(item.toUpperCase()))
-                        return n;                 
-                    
+                else {
+                    if (n.toUpperCase().indexOf(item.toUpperCase())  >= 0)
+                        return n;
+
                 }
-        
-        
+
+
             });
-          
+
+            if (maxCount != undefined && maxCount != null) {
+                result = result.slice(0, maxCount);
+            }
+            return result;
+
+        },
+        distinct: function(array, propertyName){
+            var result = [];
+            $.grep(array, function (n, i) {
+                if (dk.array.find(result,n[propertyName],propertyName,1) == 0)
+                    result.push(n);
+            });
+            return result;
         }
+            
     }
 
 }
