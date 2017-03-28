@@ -1,10 +1,7 @@
-# dk.js
-A collection of usefull js functions. 
-Look at this easy to follow .
-Enjoy!
-
 
 ## dk.array
+
+> A collection of usefull array functions mimicking LINQ syntax
 
 [JS Fiddle Examples](http://jsfiddle.net/dk82/hk9qfn5o/)
 
