@@ -33,22 +33,22 @@ Enjoy!
 
 ## dk.highcharts
 [JS Fiddle Example](http://jsfiddle.net/dk82/cbLk6s30/)
-#### Declare the container that will hold your highchart
+##### Declare the container that will hold your highchart
 
 `<div id="container"></div>`
    
-#### Initialize your highchart
+##### Initialize your highchart
 
 `Highcharts.chart('container',...`
 
-#### Update the highchart legend 
-##### (true=vertical, false=horizontal)
+##### Update the highchart legend 
+###### (true=vertical, false=horizontal)
 
 `dk.highcharts.setLegend(false, 'container');`
 
 
 
-#### DEPENDENCIES
+##### DEPENDENCIES
 * jquery.js
 * d3.js
 
