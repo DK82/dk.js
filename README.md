@@ -5,6 +5,12 @@ Add dk.js to your project by including it in your project
 
 or download it [HERE](https://github.com/DK82/dk.js/archive/master.zip) and include it in your project manually
 
+## dk.doGet
+> Re-useable ajax GET functions accepting and returning additional parameters
+
+[JS Fiddle Examples](http://jsfiddle.net/dk82/wrhLffbq/)
+
+
 
 ## dk.array
 
