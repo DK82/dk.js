@@ -5,6 +5,7 @@ Enjoy!
 
 
 ## dk.array
+
 [JS Fiddle Examples](http://jsfiddle.net/dk82/hk9qfn5o/)
 
 `dk.array.exists(array,object)`
@@ -32,6 +33,9 @@ Enjoy!
 
 
 ## dk.highcharts
+
+> Add **NONE** and **ALL** to any highchart legend with ease!
+
 [JS Fiddle Example](http://jsfiddle.net/dk82/cbLk6s30/)
 ##### Declare the container that will hold your highchart
 
