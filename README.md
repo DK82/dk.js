@@ -1,3 +1,10 @@
+# Getting started
+Add dk.js to your project by including it in your project
+
+`https://cdn.rawgit.com/DK82/dk.js/e7985761/dk.js`
+
+or download it [HERE](https://github.com/DK82/dk.js/archive/master.zip) and include it in your project manually
+
 
 ## dk.array
 
