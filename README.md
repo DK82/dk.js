@@ -8,12 +8,12 @@ or download it [HERE](https://github.com/DK82/dk.js/archive/master.zip) and incl
 ## dk.doGet
 > Re-useable ajax GET functions accepting and returning additional parameters
 
-[JS Fiddle Examples](http://jsfiddle.net/dk82/wrhLffbq/)
+[JS Fiddle Examples](http://jsfiddle.net/dk82/wrhLffbq/2/)
 
 ## dk.doPost
 > Re-useable ajax POST functions accepting and returning additional parameters
 
-[JS Fiddle Examples](http://jsfiddle.net/dk82/saeau9mj/)
+[JS Fiddle Examples](http://jsfiddle.net/dk82/saeau9mj/2/)
 
 
 
