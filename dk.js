@@ -192,7 +192,7 @@ var dk =
 
             var result = $.grep(array, function (n, i) {
                 if (propertyName != undefined && propertyName != null) {
-                    if (n[propertyName].toUpperCase().startsWith(text.toUpperCase()))
+                    if (dk.array.getPropByString(n,propertyName).toUpperCase().startsWith(text.toUpperCase()))
                         return n;
                 }
                 else {
@@ -214,7 +214,7 @@ var dk =
 
             var result = $.grep(array, function (n, i) {
                 if (propertyName != undefined && propertyName != null) {
-                    if (n[propertyName].toUpperCase().indexOf(text.toUpperCase()) >= 0)
+                    if (dk.array.getPropByString(n,propertyName).toUpperCase().indexOf(text.toUpperCase()) >= 0)
                         return n;
 
                 }
@@ -236,10 +236,26 @@ var dk =
         distinct: function(array, propertyName){
             var result = [];
             $.grep(array, function (n, i) {
-                if (dk.array.find(result,n[propertyName],propertyName,1) == 0)
+                if (dk.array.find(result,dk.array.getPropByString(n,propertyName),propertyName,1) == 0)
                     result.push(n);
             });
             return result;
+        },
+        
+        
+        
+        getPropByString: function(obj, propString) {
+            if (!propString) return obj;
+            var prop, props = propString.split('.');
+
+            for (var i = 0, iLen = props.length - 1; i < iLen; i++) {
+                prop = props[i];
+
+                var candidate = obj[prop];
+                if (candidate !== undefined) { obj = candidate; } 
+                else { break; }
+            }
+            return obj[props[i]];
         }
             
     }
