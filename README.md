@@ -10,6 +10,13 @@ or download it [HERE](https://github.com/DK82/dk.js/archive/master.zip) and incl
 
 [JS Fiddle Examples](http://jsfiddle.net/dk82/wrhLffbq/)
 
+## dk.doPost
+> Re-useable ajax POST functions accepting and returning additional parameters
+
+[JS Fiddle Examples](http://jsfiddle.net/dk82/saeau9mj/)
+
+
+
 
 
 ## dk.array
