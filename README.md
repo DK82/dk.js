@@ -15,12 +15,16 @@ or download it [HERE](https://github.com/DK82/dk.js/archive/master.zip) and incl
 
 [JS Fiddle Examples](http://jsfiddle.net/dk82/wrhLffbq/2/)
 
+`dk.doGet(route, params, callback, callbackParams, async)`
+
+`dk.doGetS(route, params, callback, callbackParams, async)`
+
 ## dk.doPost
 > Re-useable ajax POST functions accepting and returning additional parameters
 
 [JS Fiddle Examples](http://jsfiddle.net/dk82/saeau9mj/2/)
 
-
+`dk.doPost(route, params, callback, callbackParams, async)`
 
 
 
