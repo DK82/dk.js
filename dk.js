@@ -34,7 +34,7 @@ var dk =
         });
 
         function myCallback(response) {
-            callback(response, callbackParams);
+            callback(response,callbackParams,params);
         }
 
 
@@ -59,7 +59,7 @@ var dk =
         });
 
         function myCallback(response) {
-            callback(response, callbackParams);
+            callback(response,callbackParams,params);
         }
 
 
@@ -83,7 +83,7 @@ var dk =
         });
 
         function myCallback(response) {
-            callback(response, callbackParams);
+            callback(response,callbackParams,params);
         }
 
 
