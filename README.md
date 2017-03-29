@@ -3,10 +3,14 @@ Add dk.js to your project by including it in your project
 #### Previous Version
 
  `https://cdn.rawgit.com/DK82/dk.js/e7985761/dk.js`
+ 
+ `https://cdn.rawgit.com/DK82/dk.js/6b0dc41e/dk.js`
 
-#### Latest Version
+#### Latest Version 2017/03/29
 
-`https://cdn.rawgit.com/DK82/dk.js/6b0dc41e/dk.js`
+`https://cdn.rawgit.com/DK82/dk.js/19430fa2/dk.js`
+
+
 
 or download it [HERE](https://github.com/DK82/dk.js/archive/master.zip) and include it in your project manually
 
@@ -32,7 +36,7 @@ or download it [HERE](https://github.com/DK82/dk.js/archive/master.zip) and incl
 
 > A collection of usefull array functions mimicking LINQ syntax
 
-[JS Fiddle Examples](http://jsfiddle.net/dk82/hk9qfn5o/)
+[JS Fiddle Examples](http://jsfiddle.net/dk82/hk9qfn5o/1/)
 
 `dk.array.exists(array,object)`
 
@@ -50,8 +54,39 @@ or download it [HERE](https://github.com/DK82/dk.js/archive/master.zip) and incl
 
 `dk.array.distinct(array,propertyName)`
 
+#### Advanced
 
+> Lookup nested properties by seperating with '.'
 
+[JS Fiddle Examples](http://jsfiddle.net/dk82/3rax0b32/1/)
+
+```
+var exampleArray = 
+[
+{id:1, name: 'name1', data: {code: 'n11'} }, 
+{id:2, name: 'name2',  data: {code: 'n11'} }, 
+{id:3, name: 'name3',  data: {code: 'n21'} }, 
+{id:4, name: 'name4',  data: {code: 'n22'} } 
+]
+```
+
+```
+dk.array.startsWith(exampleArray,'n1','data.code')
+Result:
+[{"id":1,"name":"name1","data":{"code":"n11"}},{"id":2,"name":"name2","data":{"code":"n11"}}]
+```
+
+```
+dk.array.find(exampleArray,'n21','data.code')
+Result:
+[{"id":3,"name":"name3","data":{"code":"n21"}}]
+```
+
+```
+dk.array.distinct(exampleArray,'data.code')
+Result:
+[{"id":1,"name":"name1","data":{"code":"n11"}},{"id":3,"name":"name3","data":{"code":"n21"}},{"id":4,"name":"name4","data":{"code":"n22"}}]
+```
 
 
 
