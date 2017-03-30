@@ -10,9 +10,7 @@ https://cdn.rawgit.com/DK82/dk.js/6b0dc41e/dk.js
 
 #### Latest Version 2017/03/29
 
-```
-https://cdn.rawgit.com/DK82/dk.js/19430fa2/dk.js
-```
+`https://cdn.rawgit.com/DK82/dk.js/19430fa2/dk.js`
 
 
 or download it [HERE](https://github.com/DK82/dk.js/archive/master.zip) and include it in your project manually
@@ -32,9 +30,7 @@ dk.doGetS(route, params, callback, callbackParams, async)
 
 [JS Fiddle Examples](http://jsfiddle.net/dk82/saeau9mj/2/)
 
-```
-dk.doPost(route, params, callback, callbackParams, async)
-```
+`dk.doPost(route, params, callback, callbackParams, async)`
 
 
 
