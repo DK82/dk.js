@@ -2,14 +2,17 @@
 Add dk.js to your project by including it in your project
 #### Previous Version
 
- `https://cdn.rawgit.com/DK82/dk.js/e7985761/dk.js`
- 
- `https://cdn.rawgit.com/DK82/dk.js/6b0dc41e/dk.js`
+```
+https://cdn.rawgit.com/DK82/dk.js/e7985761/dk.js
+https://cdn.rawgit.com/DK82/dk.js/6b0dc41e/dk.js
+```
+
 
 #### Latest Version 2017/03/29
 
-`https://cdn.rawgit.com/DK82/dk.js/19430fa2/dk.js`
-
+```
+https://cdn.rawgit.com/DK82/dk.js/19430fa2/dk.js
+```
 
 
 or download it [HERE](https://github.com/DK82/dk.js/archive/master.zip) and include it in your project manually
@@ -19,16 +22,19 @@ or download it [HERE](https://github.com/DK82/dk.js/archive/master.zip) and incl
 
 [JS Fiddle Examples](http://jsfiddle.net/dk82/wrhLffbq/2/)
 
-`dk.doGet(route, params, callback, callbackParams, async)`
-
-`dk.doGetS(route, params, callback, callbackParams, async)`
+```
+dk.doGet(route, params, callback, callbackParams, async)
+dk.doGetS(route, params, callback, callbackParams, async)
+```
 
 ## dk.doPost
 > Re-useable ajax POST functions accepting and returning additional parameters
 
 [JS Fiddle Examples](http://jsfiddle.net/dk82/saeau9mj/2/)
 
-`dk.doPost(route, params, callback, callbackParams, async)`
+```
+dk.doPost(route, params, callback, callbackParams, async)
+```
 
 
 
