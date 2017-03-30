@@ -38,21 +38,16 @@ or download it [HERE](https://github.com/DK82/dk.js/archive/master.zip) and incl
 
 [JS Fiddle Examples](http://jsfiddle.net/dk82/hk9qfn5o/1/)
 
-`dk.array.exists(array,object)`
-
-`dk.array.getItemIds(array)`
-
-`dk.array.remove(array,object)`
-
-`dk.array.startsWith(array,text,propertyName)`
-
-`dk.array.startsWith(array,text,propertyName,maxCount)`
-
-`dk.array.find(array,text,propertyName)`
-
-`dk.array.find(array,text,propertyName,maxCount)`
-
-`dk.array.distinct(array,propertyName)`
+```
+dk.array.exists(array,object)
+dk.array.getItemIds(array)
+dk.array.remove(array,object)
+dk.array.startsWith(array,text,propertyName)
+dk.array.startsWith(array,text,propertyName,maxCount)
+dk.array.find(array,text,propertyName)
+dk.array.find(array,text,propertyName,maxCount)
+dk.array.distinct(array,propertyName)
+```
 
 #### Advanced
 
