@@ -74,19 +74,28 @@ var exampleArray =
 ```
 dk.array.startsWith(exampleArray,'n1','data.code')
 Result:
-[{"id":1,"name":"name1","data":{"code":"n11"}},{"id":2,"name":"name2","data":{"code":"n11"}}]
+[
+{"id":1,"name":"name1","data":{"code":"n11"}},
+{"id":2,"name":"name2","data":{"code":"n11"}}
+]
 ```
 
 ```
 dk.array.find(exampleArray,'n21','data.code')
 Result:
-[{"id":3,"name":"name3","data":{"code":"n21"}}]
+[
+{"id":3,"name":"name3","data":{"code":"n21"}}
+]
 ```
 
 ```
 dk.array.distinct(exampleArray,'data.code')
 Result:
-[{"id":1,"name":"name1","data":{"code":"n11"}},{"id":3,"name":"name3","data":{"code":"n21"}},{"id":4,"name":"name4","data":{"code":"n22"}}]
+[
+{"id":1,"name":"name1","data":{"code":"n11"}},
+{"id":3,"name":"name3","data":{"code":"n21"}},
+{"id":4,"name":"name4","data":{"code":"n22"}}
+]
 ```
 
 
