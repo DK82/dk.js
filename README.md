@@ -13,7 +13,7 @@ or download it [HERE](https://github.com/DK82/dk.js/archive/master.zip) and incl
 ## dk.doGet
 > Re-useable ajax GET functions accepting and returning additional parameters
 
-[JS Fiddle Examples](http://jsfiddle.net/dk82/wrhLffbq/4/)
+[JS Fiddle Examples](http://jsfiddle.net/dk82/wrhLffbq/5/)
 
 ```
 dk.doGet(route, params, callback, callbackParams, async)
