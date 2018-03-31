@@ -7,9 +7,9 @@ var dk =
 
     getUrl: function (controller, action) {
         try {
-            return pageUrl.replace('A', action).replace('C', controller);
+            return pageUrl.replace('[A]', action).replace('[C]', controller);
         } catch (e) {
-            console.log('Add this line to your layout file... [var pageUrl = \'@Url.Action("A","C")\';] ');
+            console.log('Add this line to your layout file... var pageUrl = \'@Url.Action("[A]","[C]")\'; ');
             return null;
         }
     },
