@@ -1,17 +1,10 @@
 # Getting started
 Add dk.js to your project by including it in your project
-#### Previous Version
+
+#### Reference
 
 ```
-https://cdn.rawgit.com/DK82/dk.js/e7985761/dk.js
-https://cdn.rawgit.com/DK82/dk.js/6b0dc41e/dk.js
-```
-
-
-#### Latest Version 2017/03/29
-
-```
-https://cdn.rawgit.com/DK82/dk.js/19430fa2/dk.js
+https://rawgit.com/DK82/dklibs/master/dk.js
 ```
 
 
