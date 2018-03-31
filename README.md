@@ -13,7 +13,7 @@ or download it [HERE](https://github.com/DK82/dk.js/archive/master.zip) and incl
 ## dk.doGet
 > Re-useable ajax GET functions accepting and returning additional parameters
 
-[JS Fiddle Examples](http://jsfiddle.net/dk82/wrhLffbq/5/)
+[JS Fiddle Examples](http://jsfiddle.net/wrhLffbq/5/)
 
 ```
 dk.doGet(route, params, callback, callbackParams, async)
@@ -23,7 +23,7 @@ dk.doGetS(route, params, callback, callbackParams, async)
 ## dk.doPost
 > Re-useable ajax POST functions accepting and returning additional parameters
 
-[JS Fiddle Examples](http://jsfiddle.net/dk82/saeau9mj/4/)
+[JS Fiddle Examples](http://jsfiddle.net/saeau9mj/4/)
 
 ```
 dk.doPost(route, params, callback, callbackParams, async)
@@ -35,7 +35,7 @@ dk.doPost(route, params, callback, callbackParams, async)
 
 > A collection of usefull array functions mimicking LINQ syntax
 
-[JS Fiddle Examples](http://jsfiddle.net/dk82/hk9qfn5o/3/)
+[JS Fiddle Examples](http://jsfiddle.net/hk9qfn5o/3/)
 
 ```
 dk.array.exists(array,object)
@@ -52,7 +52,7 @@ dk.array.distinct(array,propertyName)
 
 > Lookup nested properties by seperating with '.'
 
-[JS Fiddle Examples](http://jsfiddle.net/dk82/3rax0b32/3/)
+[JS Fiddle Examples](http://jsfiddle.net/3rax0b32/3/)
 
 ```
 var exampleArray = 
@@ -100,7 +100,7 @@ Result:
 
 > Add **NONE** and **ALL** to any highchart legend with ease!
 
-[JS Fiddle Example](http://jsfiddle.net/dk82/cbLk6s30/)
+[JS Fiddle Example](http://jsfiddle.net/cbLk6s30/)
 
 ##### DEPENDENCIES
 * jquery.js
