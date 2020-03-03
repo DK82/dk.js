@@ -1,0 +1,23 @@
+{
+  "name": "dk82.js",
+  "version": "1.0.0",
+  "description": "Add dk.js to your project by including it in your project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DK82/dk.js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DK82/dk.js/issues"
+  },
+  "homepage": "https://github.com/DK82/dk.js#readme",
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
+  
+}
